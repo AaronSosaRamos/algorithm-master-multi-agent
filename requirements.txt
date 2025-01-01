@@ -3,7 +3,9 @@ openai
 duckduckgo-search
 fastapi[standard]
 sqlalchemy
-lacedb
+lancedb
 tantivy
 pypdf
 python-dotenv
+pandas
+gradio

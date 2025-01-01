@@ -4,6 +4,9 @@ from phi.embedder.openai import OpenAIEmbedder
 from phi.knowledge.pdf import PDFUrlKnowledgeBase
 from phi.vectordb.lancedb import LanceDb, SearchType
 
+from dotenv import load_dotenv, find_dotenv
+load_dotenv(find_dotenv())
+
 def compile_knowledge_base(urls):
     knowledge_base = PDFUrlKnowledgeBase(
     urls=urls,
